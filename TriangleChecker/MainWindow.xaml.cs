@@ -43,7 +43,7 @@ namespace TriangleChecker
             Color backgroundColor = triangle.IsValid ? Color.FromArgb(200, 40, 210, 60) : Color.FromArgb(200, 240, 10, 30); //根據三角形是否正確來設定背景色
 
             resultLabel.Content = triangle.IsValid      //根據三角形是否合法更新結果標籤的內容
-                ? $"邊長 {triangle.Side1}, {triangle.Side2}, {triangle.Side3} 可構成三角形"         //如果三角形合法
+                ? $"邊長 {triangle.Side1}, {triangle.Side2}, {triangle.Side3} 可構成三角形"         //如果三角形正確
                 : $"邊長 {triangle.Side1}, {triangle.Side2}, {triangle.Side3} 不可構成三角形";      //否則
 
             resultLabel.Background = new SolidColorBrush(backgroundColor);    //在resultLabel.Background屬性設定結果標籤的背景色 以創建的SolidColorBrush物件 填入backgroundColor顏色
